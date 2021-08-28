@@ -1,0 +1,16 @@
+package operator;
+
+public class CalcScore {
+
+	public static void main(String[] args) {
+		
+		int num = 10;
+		// 후치 연산
+		System.out.println(num++); // 10
+		System.out.println(num);   // 11
+		
+		// 전치 연산
+		System.out.println(++num); // 12
+		System.out.println(num);   // 12
+	}
+}

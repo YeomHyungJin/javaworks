@@ -1,0 +1,21 @@
+package operator;
+
+public class CalcScore {
+
+	public static void main(String[] args) {
+		// 과목의 총점과 평균 구하기
+		int mathScore = 100;
+		int englishScore = 80;
+		int argScore = 60;
+		int excerciseScore = 100;
+		
+		int totalScore = mathScore + englishScore + argScore + excerciseScore;
+		// 강제 형변환
+		double avgScore = (double)totalScore / 4;
+		
+		System.out.println("총점은?? "+totalScore);
+		System.out.println("평균은?? "+avgScore);
+	}	
+		
+
+}

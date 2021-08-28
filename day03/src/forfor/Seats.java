@@ -1,0 +1,53 @@
+package forfor;
+
+import java.util.Scanner;
+
+public class Seats {
+
+	public static void main(String[] args) {
+		// 1씩 증가하는 반복문
+//		int i, j;
+//		for(i=0; i<5; i++)
+//		{
+//			for(j=1;j<=5; j++)
+//			{
+//				int inc = i*5+j;
+//				System.out.print("좌석" + inc + " ");
+//			}
+//			System.out.println();
+//		}
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("입장객 수 입력 : ");
+		int customNum = sc.nextInt();
+		
+		System.out.print("좌석 열의 수 입력 : ");
+		int colNum = sc.nextInt();
+		
+		int rowNum;
+		
+		if(customNum % colNum == 0 )
+		{
+			rowNum = customNum / colNum;
+		}
+		else
+		{
+			rowNum = customNum / colNum+1;
+		}
+		int i, j;
+		for(i=0; i<rowNum; i++)
+		{
+			for(j=1;j<=colNum; j++)
+			{
+				int seat = i*colNum+j;
+				System.out.print("좌석" + seat + " ");
+				if (seat == customNum)
+				{
+					break;
+				}
+			}
+			System.out.println();
+		}
+		sc.close();
+	}
+}
