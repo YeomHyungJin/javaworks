@@ -1,0 +1,7 @@
+package staticsample;
+
+public class Employee {
+	int id;
+	String name;
+	
+}
