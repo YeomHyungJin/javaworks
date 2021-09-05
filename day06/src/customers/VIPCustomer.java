@@ -12,6 +12,15 @@ public class VIPCustomer extends Customer{
 		saleRatio = 0.1;
 	}
 	
+	public VIPCustomer(int customerId, String customerName, int agentId) 
+	{
+		super(customerId, customerName);
+		this.agentId = agentId;
+		customerGrade = "VIP";
+		bonusRatio = 0.05;
+		saleRatio = 0.1;
+	}
+	
 	@Override	// 메서드 재정의
 	public int calcPrice(int price) {
 		

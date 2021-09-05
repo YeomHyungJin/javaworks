@@ -14,6 +14,15 @@ public class Customer {
 		bonusRatio = 0.01;	// 1%
 	}
 	
+	public Customer(int customerId, String customerName)
+	{
+		this.customerId = customerId;
+		this.customerName = customerName;
+		
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;	// 1%
+	}
+	
 	public void setCustomerName(String customerName)
 	{
 		this.customerName = customerName;
