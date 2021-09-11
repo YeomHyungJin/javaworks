@@ -37,7 +37,7 @@ public class TypingGame {
 		}
 		System.out.println("프로그램 종료");
 		end = System.currentTimeMillis()/1000;
-		float time = (float)end-start;
+		long time = (long)end-start;
 		System.out.println("걸린시간은 "+time+"초입니다.");
 		sc.close();
 		

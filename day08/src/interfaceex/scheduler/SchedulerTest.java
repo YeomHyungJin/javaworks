@@ -10,27 +10,32 @@ public class SchedulerTest {
 		System.out.println("L : 대기가 가장 적은 상담원에게 배분");
 		System.out.println("P : 우선 순위가 높은 고객 먼저 배분");
 		
-		int ch = System.in.read();
-		
-		Scheduler scheduler = null;
-		if(ch == 'R')
+		try {
+			int ch = System.in.read();
+			
+			Scheduler scheduler = null;
+			if(ch == 'R')
+			{
+				scheduler = new RoundRobin();
+			}
+			else if(ch == 'L')
+			{
+				scheduler = new LeastJob();
+			}
+			else if(ch == 'P')
+			{
+				scheduler = new PriorityAllocation();
+			}
+			else
+			{
+				System.out.println("지원되지 않는 기능입니다.");
+			}
+			scheduler.getNextCall();
+			scheduler.sendCallToAgent();
+		}catch(NullPointerException e)
 		{
-			scheduler = new RoundRobin();
+			System.out.println("프로그램을 종료합니다.");
 		}
-		else if(ch == 'L')
-		{
-			scheduler = new LeastJob();
-		}
-		else if(ch == 'P')
-		{
-			scheduler = new PriorityAllocation();
-		}
-		else
-		{
-			System.out.println("지원되지 않는 기능입니다.");
-		}
-		scheduler.getNextCall();
-		scheduler.sendCallToAgent();
 	}
 
 }

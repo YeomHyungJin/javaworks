@@ -5,10 +5,7 @@ public class Student {
 	private String studentName;		// 이름
 	private int grade;				// 학년
 	
-	public Student() // 기본생성자는 생략 가능
-	{
-		
-	}
+	public Student(){} // 기본생성자는 생략 가능
 	
 	public Student(String studentName)
 	{
