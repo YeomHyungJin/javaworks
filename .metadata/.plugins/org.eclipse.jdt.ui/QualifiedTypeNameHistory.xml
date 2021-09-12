@@ -7,7 +7,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="customermanage.GoldCustomer"/>
     <fullyQualifiedTypeName name="customermanage.Customer"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="scoremanage.score.Subject"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="interfaceex.MyCalculator"/>
@@ -19,4 +18,7 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="interfaceex.RemoteControl"/>
+    <fullyQualifiedTypeName name="interfaceex.Searchable"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
