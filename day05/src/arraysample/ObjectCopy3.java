@@ -1,7 +1,5 @@
 package arraysample;
 
-import java.lang.reflect.Array;
-
 public class ObjectCopy3 {
 
 	public static void main(String[] args) {

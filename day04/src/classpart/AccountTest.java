@@ -16,6 +16,7 @@ public class AccountTest {
 		System.out.println(account.getAno());
 		System.out.println(account.getOwner());
 		System.out.println(account.getBalance());
+		System.out.println(account2);
 	}
 
 }

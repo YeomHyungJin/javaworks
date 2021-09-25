@@ -12,6 +12,11 @@ public class ObjectCopy2 {
 		array1[1] = new Book("점프 투 파이썬", "박응용");
 		array1[2] = new Book("천개의 파랑", "천선란"); 
 		
+		System.out.println("=== array1 출력 ===");
+		for(int i = 0; i < array1.length; i++) {
+			array1[i].showInfo();
+		}
+		
 		//array1[0]를 수정
 		array1[0].setBookName("미생1");
 		array1[0].setAuthor("윤태호");
@@ -19,11 +24,6 @@ public class ObjectCopy2 {
 		//array2에 복사
 		for(int i = 0; i < array1.length; i++) {
 			array2[i] = array1[i];
-		}
-		
-		System.out.println("=== array1 출력 ===");
-		for(int i = 0; i < array1.length; i++) {
-			array1[i].showInfo();
 		}
 		
 		System.out.println("=== array2 출력 ===");

@@ -31,4 +31,22 @@ public class Member {
 	{
 		return memberId + ", " + memberName;
 	}
+	
+	@Override
+	public int hashCode() {	// 중복제거
+		return memberId;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Member)
+		{
+			Member member = (Member)obj;	// Object -> Member 다운캐스팅
+			if(this.memberId == member.memberId)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 }
